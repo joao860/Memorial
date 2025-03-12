@@ -7,7 +7,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <main class="container">
+    <!-- Tela inicial -->
+    <div id="start-screen" class="start-screen">
+        <div class="start-content">
+            <!-- Botão "Clique aqui" -->
+            <button id="start-button" class="start-button">Clique aqui</button>
+        </div>
+
+        <!-- Corações flutuantes -->
+        <div id="floating-hearts" class="floating-hearts"></div>
+    </div>
+
+    <!-- Conteúdo principal (memorial) -->
+    <main class="container" style="display: none;">
         <h1>Nosso Memorial</h1>
         <div class="carousel-container">
             <div class="carousel">
@@ -40,12 +52,15 @@
 
         <div class="content">
             <div class="pink-line"></div>
-            <h1 class="description">Eu Te Amo.. Amo Muito, Talves Até Mais Do Que Alguém Consiga Amar Outra Pessoa..</h1>
+            <h1 class="description">Eu te amo.. Amo muito, Talves até mais do que alguém consiga amar outra pessoa..</h1>
             <div class="time">12:59:25</div>
         </div>
     </main>
+
+    <!-- Emoji container para a chuva de corações -->
     <div id="emoji-container"></div>
-    
+
+    <!-- Player de música -->
     <div class="music-player">
         <div class="music-info">
             <img src="img/capa.png" alt="Album Cover" class="album-cover">
