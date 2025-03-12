@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         emoji.className = 'emoji';
         emoji.textContent = emojis[Math.floor(Math.random() * emojis.length)];
         emoji.style.left = Math.random() * 100 + 'vw';
-        emoji.style.animationDuration = (Math.random() * 2 + 1) + 's';
+        emoji.style.animationDuration = (Math.random() * 3 + 2) + 's';
         emojiContainer.appendChild(emoji);
 
         emoji.addEventListener('animationend', () => {
