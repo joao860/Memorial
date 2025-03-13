@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Cria corações flutuantes
     function createFloatingHearts() {
-      const numberOfHearts = 30 // Número de corações flutuantes
+      const numberOfHearts = 50 // Número de corações flutuantes
       for (let i = 0; i < numberOfHearts; i++) {
         const heart = document.createElement("div")
         heart.className = "heart"
@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Atualizar contador
     function updateTimer() {
-      const startDate = new Date("2025-02-13T00:00:00") // Data de início do relacionamento
+      const startDate = new Date("2025-02-12T00:00:00") // Data de início do relacionamento
       const now = new Date()
       const timeDiff = now - startDate
   
