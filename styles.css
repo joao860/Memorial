@@ -160,7 +160,7 @@
     transform: translateX(-400px); /* Posição inicial fora da tela */
     cursor: pointer;
     z-index: 1001;
-    transition: transform 0.8s ease-out;
+    transition: transform 2.5s cubic-bezier(0.22, 1, 0.36, 1);
   }
   
   .music-player.animate-in {
