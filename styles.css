@@ -157,11 +157,14 @@
     width: min(300px, calc(100vw - 20px));
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    animation: slideIn 0.8s ease-out forwards;
-    animation-delay: 1s;
+    transform: translateX(-400px); /* Posição inicial fora da tela */
     cursor: pointer;
     z-index: 1001;
-    transform: translateX(-400px); /* Posição inicial fora da tela */
+    transition: transform 0.8s ease-out;
+  }
+  
+  .music-player.animate-in {
+    transform: translateX(0);
   }
   
   .music-player.collapsed {
@@ -370,8 +373,6 @@
       left: 0;
       width: min(300px, calc(100% - 20px));
       margin: 10px;
-      animation: slideIn 0.8s ease-out forwards;
-      animation-delay: 1s;
       transform: translateX(-400px); /* Posição inicial fora da tela */
     }
   }
